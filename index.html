@@ -6,26 +6,21 @@
 <title>Shunya se Shikhar · Takeaway</title>
 <meta name="description" content="Takeaway pack for 'Shunya se Shikhar: The Power of Zero, Excel x AI' - National Conference, Rajkot, 24 Oct 2026.">
 <style>
-  /* Colours are tokens: replace them with the event flyer's palette in one place. */
+  /* Excel theme: white and green, always (also on phones set to dark mode). */
   :root {
-    --bg: #f6f7fb; --surface: #ffffff; --ink: #1b2333; --muted: #5b6475; --line: #e3e6ee;
-    --brand: #1f4e79; --brand-ink: #ffffff; --accent: #c0392b; --chip: #eef2f8; --code: #f3f5f9;
-    --ok: #2e7d32;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #0f141c; --surface: #171e29; --ink: #e8ecf3; --muted: #9aa4b5; --line: #273142;
-      --brand: #6ea8de; --brand-ink: #0f141c; --accent: #ff7a6b; --chip: #1f2836; --code: #121823; --ok: #7bc47f;
-    }
-  }
-  :root[data-theme="dark"] {
-    --bg: #0f141c; --surface: #171e29; --ink: #e8ecf3; --muted: #9aa4b5; --line: #273142;
-    --brand: #6ea8de; --brand-ink: #0f141c; --accent: #ff7a6b; --chip: #1f2836; --code: #121823; --ok: #7bc47f;
+    color-scheme: light;
+    --bg: #ffffff; --surface: #ffffff; --ink: #1d2b22; --muted: #56655b; --line: #d4e3d9;
+    --brand: #217346; --brand-ink: #ffffff; --accent: #107c41; --chip: #eaf4ee; --code: #f3f9f5;
+    --ok: #0b5a2f; --grid: rgba(255, 255, 255, .09);
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
   .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
-  header { background: var(--brand); color: var(--brand-ink); padding: 36px 0 30px; }
+  header { background-color: var(--brand); color: var(--brand-ink); padding: 36px 0 30px;
+           background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+           background-size: 64px 20px; }
+  .card { box-shadow: 0 1px 2px rgba(16, 124, 65, .06); }
+  .big:hover, .copy:hover { filter: brightness(1.08); }
   .zero { font-size: 44px; font-weight: 800; letter-spacing: .02em; line-height: 1; }
   .zero span { display: inline-block; border: 4px solid currentColor; border-radius: 50%; width: 1.05em; height: 1.05em; line-height: .9; text-align: center; font-size: .78em; margin-left: .04em; }
   header h1 { margin: 10px 0 4px; font-size: 26px; }
