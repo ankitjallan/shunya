@@ -48,7 +48,8 @@
   .cols span.on { background: var(--green-sel); color: var(--green-dk); font-weight: 700; border-bottom: 2px solid var(--green-ac); }
 
   /* rows */
-  main { counter-reset: row; max-width: 980px; }
+  main { counter-reset: row; }
+  .cell > * { max-width: 920px; }
   .row { display: grid; grid-template-columns: var(--gut) 1fr; border-bottom: 1px solid var(--grid); position: relative; }
   .row::before { counter-increment: row; content: counter(row); background: var(--head); color: var(--head-ink); font-size: 12px;
                  text-align: center; padding-top: 12px; border-right: 1px solid #c8c8c8; }
